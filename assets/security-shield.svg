@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 420" width="100%" height="100%" fill="none">
+  <!-- Outer Shield Path with Card Integration -->
+  <!-- Solid Blue: #1E3FE0 / #0055FF -->
+  <g fill="#0055FF">
+    <!-- Shield Top Peak and Left Border -->
+    <path d="M 200 24 
+             L 305 66 
+             L 305 106 
+             L 280 106 
+             L 280 84 
+             L 200 52 
+             L 94 84 
+             L 94 256 
+             L 200 354 
+             L 242 316 
+             L 242 344 
+             L 200 382 
+             L 66 268 
+             L 66 72 
+             Z" />
+
+    <!-- Card Top Block -->
+    <path d="M 160 106 
+             H 358 
+             C 368 106 376 114 376 124 
+             V 174 
+             H 160 
+             Z" />
+
+    <!-- Card Bottom Block -->
+    <path d="M 160 196 
+             H 376 
+             V 262 
+             C 376 272 368 280 358 280 
+             H 276 
+             L 276 280 
+             H 160 
+             Z" />
+
+    <!-- Shield Bottom Right Return Segment connecting to card -->
+    <path d="M 276 280 
+             L 200 354 
+             L 200 382 
+             L 296 295 
+             L 296 280 
+             Z" />
+  </g>
+</svg>

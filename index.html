@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA | Your Dollar Card. Your Money. Your Control.</title>
+  <meta name="description" content="Spend online globally with a secure USD card designed to give you complete control over your money. Create your NOVA Dollar Card, manage your balance, control where it can be used.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows -->
+  <div class="glow-bg glow-hero"></div>
+  <div class="glow-bg glow-features"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <!-- Logo -->
+      <a href="#" class="nav-brand" aria-label="NOVA Home">
+        <img src="assets/nova-logo.png" alt="NOVA" class="nav-logo-img">
+      </a>
+
+      <!-- Center Links -->
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active">Card</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#security" class="nav-link">Security</a>
+        <a href="#stats" class="nav-link">Analytics</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="nav-actions">
+        <button class="nav-icon-btn" aria-label="Language selector" title="Global USD / EN">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+        </button>
+        <button class="nav-text-btn" id="open-signin-btn">Sign In</button>
+        <button class="btn-primary-pill" id="nav-cta-btn">Get NOVA Card &rarr;</button>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-links">
+      <a href="#hero" class="drawer-link active">Card</a>
+      <a href="#features" class="drawer-link">Features</a>
+      <a href="#security" class="drawer-link">Security</a>
+      <a href="#stats" class="drawer-link">Analytics</a>
+      <a href="#how-it-works" class="drawer-link">How It Works</a>
+    </div>
+    <div class="drawer-actions">
+      <button class="btn-primary-pill w-full" id="mobile-cta-btn">Get NOVA Card &rarr;</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Section 1: Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Hero Left Content -->
+        <div class="hero-content">
+          <h1 class="hero-headline">
+            <span class="hero-title-blue">Your Dollar Card.</span>
+            <span class="hero-title-white">Your Money.</span>
+            <span class="hero-title-white">Your Control.</span>
+          </h1>
+          <p class="hero-description">
+            Spend online globally with a secure USD card designed to give you complete control over your money. Create your NOVA Dollar Card, manage your balance, control where it can be used, and stay in charge of every transaction.
+          </p>
+          <div class="hero-cta-group">
+            <button class="btn-hero-primary" id="hero-get-card-btn">Get Your Dollar Card</button>
+            <a href="#features" class="btn-hero-secondary" id="hero-explore-btn">Explore Features</a>
+          </div>
+        </div>
+
+        <!-- Hero Right Mockup Showcase -->
+        <div class="hero-visual">
+          <div class="hero-mockup-wrapper">
+            <img src="assets/hero-mockup.png" alt="NOVA USD Dollar Card and Mobile App Interface" class="hero-mockup-img" id="hero-phone-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust & Stats Bar -->
+    <section class="section stats-section" id="stats">
+      <div class="container">
+        <div class="stats-label-wrapper">
+          <p class="stats-kicker">BUILT FOR MODERN GLOBAL SPENDING</p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value">$120M+</div>
+            <div class="stat-label">Global Spend Processed</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">99.99%</div>
+            <div class="stat-label">Card Authorization Rate</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">180+</div>
+            <div class="stat-label">Countries Supported</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value stat-accent-green">0%</div>
+            <div class="stat-label">Hidden FX Markups</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Features - "More than a dollar card" -->
+    <section class="section features-section" id="features">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-badge-blue">UNMATCHED AGILITY</p>
+          <h2 class="section-title">More than a dollar card</h2>
+          <p class="section-subtitle">
+            Engineered for international founders, global remote operators, digital nomads, and boundary-pushing creators.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Card 1: Spend Globally -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M2 12h20"></path>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Spend Globally</h3>
+            <p class="feature-description">
+              Use your NOVA USD card for seamless online subscriptions, cloud infrastructure, flight bookings, and international e-commerce without arbitrary declines.
+            </p>
+            <div class="feature-widget widget-accepted">
+              <div class="widget-header">
+                <span class="widget-muted-text">Accepted Services</span>
+                <span class="widget-status-green"><span class="status-dot-green"></span> 100% Compatible</span>
+              </div>
+              <div class="accepted-pills">
+                <span class="service-pill">AWS Cloud</span>
+                <span class="service-pill">Apple Pay</span>
+                <span class="service-pill">Netflix</span>
+                <span class="service-pill">Stripe SaaS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Stay in Control -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+            </div>
+            <h3 class="feature-title">Stay in Control</h3>
+            <p class="feature-description">
+              Freeze your card in 1-tap, set individual velocity limits, and restrict specific channels like physical POS or online recurring billing on demand.
+            </p>
+            <div class="feature-widget widget-control">
+              <div class="widget-header">
+                <span class="widget-muted-text">Card Freeze Lock</span>
+                <button class="lock-status-btn unlocked" id="card-freeze-toggle" title="Click to toggle freeze status">
+                  <span class="lock-dot"></span>
+                  <span id="card-freeze-text">Instant Unlocked</span>
+                </button>
+              </div>
+              <div class="velocity-bar-wrapper">
+                <div class="velocity-bar-track">
+                  <div class="velocity-bar-fill" id="velocity-bar" style="width: 64%;"></div>
+                </div>
+              </div>
+              <div class="widget-footer-text" id="velocity-text">
+                Monthly spend velocity: $3,200 / $5,000
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: See Every Transaction -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">See Every Transaction</h3>
+            <p class="feature-description">
+              Instantaneous push telemetry, category tagging, and automatic receipt reconciliation ensure you never experience mystery debit charges.
+            </p>
+            <div class="feature-widget widget-transactions">
+              <div class="tx-item">
+                <div class="tx-left">
+                  <div class="tx-icon-shape icon-figma">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                      <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                      <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                      <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                      <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+                    </svg>
+                  </div>
+                  <span class="tx-name">Figma Annual Team</span>
+                </div>
+                <span class="tx-amount">-$144.00</span>
+              </div>
+              <div class="tx-item">
+                <div class="tx-left">
+                  <div class="tx-icon-shape icon-github">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                  </div>
+                  <span class="tx-name">GitHub Copilot Enterprise</span>
+                </div>
+                <span class="tx-amount">-$39.00</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Built With Security in Mind -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <circle cx="12" cy="11" r="2"></circle>
+                <path d="M12 13v3"></path>
+              </svg>
+            </div>
+            <h3 class="feature-title">Built With Security in Mind</h3>
+            <p class="feature-description">
+              Dynamic CVV generation, military-grade tokenization, biometric verification steps, and autonomous AI-based fraud pattern rejection.
+            </p>
+            <div class="feature-widget widget-cvv">
+              <div class="cvv-left">
+                <div class="cvv-token-kicker">DYNAMIC CVV TOKEN</div>
+                <div class="cvv-token-value">
+                  <span id="cvv-value">834</span> &bull; Refreshes in <span id="cvv-timer">42</span>s
+                </div>
+              </div>
+              <div class="cvv-right">
+                <div class="cvv-shield-badge">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0066FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: "Get started in two swift steps" -->
+    <section class="section steps-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-badge-blue">ONBOARDING VELOCITY</p>
+          <h2 class="section-title">Get started in two swift steps</h2>
+          <p class="section-subtitle">
+            No bank queues, no cumbersome paperwork. Get your international USD debit instrument ready to spend in minutes.
+          </p>
+        </div>
+
+        <!-- Step 1: Fund & Manage -->
+        <div class="step-row step-row-1">
+          <div class="step-visual">
+            <div class="phone-frame-container">
+              <img src="assets/step1-phone.png" alt="Step 1: Fund & Manage phone interface" class="step-phone-img">
+            </div>
+          </div>
+          <div class="step-details">
+            <div class="step-header-wrap">
+              <div class="step-numeral">01</div>
+              <h3 class="step-heading">Fund & Manage</h3>
+            </div>
+            <p class="step-body">
+              Top up your USD balance easily via direct bank wire, local payment rails, or stablecoins at transparent mid-market exchange rates.
+            </p>
+            <a href="#hero" class="step-action-link" id="step1-link">Instant ledger credit</a>
+          </div>
+        </div>
+
+        <!-- Step 2: Spend With Confidence -->
+        <div class="step-row step-row-2">
+          <div class="step-details">
+            <div class="step-header-wrap">
+              <div class="step-numeral">02</div>
+              <h3 class="step-heading">Spend With Confidence</h3>
+            </div>
+            <p class="step-body">
+              Pay for cloud services, SaaS stacks, flight tickets, and shopping globally wherever USD payment schemes are accepted worldwide.
+            </p>
+            <a href="#hero" class="step-action-link" id="step2-link">Zero FX penalty</a>
+          </div>
+          <div class="step-visual">
+            <div class="phone-frame-container">
+              <img src="assets/step2-phone.png" alt="Step 2: Spend With Confidence payment successful interface" class="step-phone-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: "Your money. Your rules." (Security) -->
+    <section class="section security-section" id="security">
+      <div class="container">
+        <div class="security-layout">
+          <!-- Header Group with Shield and Heading on same row -->
+          <div class="security-header-group">
+            <div class="security-title-row">
+              <div class="security-emblem-wrapper">
+                <img src="assets/security-shield.png" alt="NOVA Security Shield" class="security-shield-graphic">
+              </div>
+              <h2 class="security-title">
+                <span>Your money.</span>
+                <span>Your rules.</span>
+              </h2>
+            </div>
+            <p class="security-subtitle">
+              We engineered the NOVA USD Card ecosystem with bank-grade defense parameters, zero-knowledge storage principles, and proactive intrusion detection.
+            </p>
+          </div>
+
+          <!-- Staggered Zigzag Cards Grid -->
+          <div class="security-cards-grid">
+            <!-- Security Item 1: AES 256-Bit Encryption -->
+            <div class="security-item-card card-zigzag-1">
+              <div class="security-card-header">
+                <div class="security-card-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0066FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
+                <h4 class="security-card-title">AES 256-Bit Encryption</h4>
+              </div>
+              <p class="security-card-body">All financial telemetry and credentials are encrypted both at rest and during flight.</p>
+            </div>
+
+            <!-- Security Item 2: Instant Kill-Switch -->
+            <div class="security-item-card card-zigzag-2">
+              <div class="security-card-header">
+                <div class="security-card-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0066FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path>
+                    <line x1="12" y1="2" x2="12" y2="12"></line>
+                  </svg>
+                </div>
+                <h4 class="security-card-title">Instant Kill-Switch</h4>
+              </div>
+              <p class="security-card-body">Freeze hardware or virtual issuance with single-tap instant authorization revoking.</p>
+            </div>
+
+            <!-- Security Item 3: AI Anomaly Detection -->
+            <div class="security-item-card card-zigzag-3">
+              <div class="security-card-header">
+                <div class="security-card-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0066FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+                <h4 class="security-card-title">AI Anomaly Detection</h4>
+              </div>
+              <p class="security-card-body">Real-time risk scoring prevents fraudulent transactions before they deduct your balance.</p>
+            </div>
+
+            <!-- Security Item 4: SOC2 Type II Certified -->
+            <div class="security-item-card card-zigzag-4">
+              <div class="security-card-header">
+                <div class="security-card-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0066FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <h4 class="security-card-title">SOC2 Type II Certified</h4>
+              </div>
+              <p class="security-card-body">Audited by tier-1 global compliance authorities to guarantee institutional standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Testimonials - "What Our Customers Say" -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="testimonials-backdrop-container">
+        <img src="assets/testimonials-banner.png" alt="Customers praise background" class="testimonials-banner-img">
+        <div class="testimonials-overlay-gradient"></div>
+      </div>
+
+      <div class="container testimonials-content-container">
+        <div class="section-header text-center">
+          <div class="pill-badge-white">TESTIMONIES</div>
+          <h2 class="section-title text-white">What Our Customers Say</h2>
+        </div>
+
+        <div class="testimonials-cards-wrapper">
+          <div class="testimonials-track">
+          <!-- Testimonial 1: David Ilemona -->
+          <div class="testimonial-card">
+            <div class="testimonial-card-header">
+              <h4 class="user-name">David Ilemona</h4>
+              <div class="google-g-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                  <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                  <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.03 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                  <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="testimonial-body">
+              It was a prompt and wonderful experience
+            </p>
+          </div>
+
+          <!-- Testimonial 2: Damilare Adewunmi -->
+          <div class="testimonial-card">
+            <div class="testimonial-card-header">
+              <h4 class="user-name">Damilare Adewunmi</h4>
+              <div class="google-g-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                  <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                  <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                  <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.03 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                  <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+                </svg>
+              </div>
+            </div>
+            <p class="testimonial-body">
+              I have a great response time with their customer care and the quality of their services is great. It is a company I can bonafede recommend to a friend
+            </p>
+          </div>
+          </div>
+
+          <button type="button" class="testimonial-arrow testimonial-arrow-prev" aria-label="Previous testimonial" disabled>&lsaquo;</button>
+          <button type="button" class="testimonial-arrow testimonial-arrow-next" aria-label="Next testimonial">&rsaquo;</button>
+        </div>
+
+        <div class="testimonial-dots" role="tablist" aria-label="Testimonial navigation"></div>
+      </div>
+    </section>
+
+    <!-- Section 6: Ready to take control CTA Card -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card">
+          <h2 class="cta-title">Ready to take control of your dollar spending?</h2>
+          <p class="cta-subtitle">
+            Get your NOVA USD Dollar Card and experience a simpler, frictionless way to spend globally with total control.
+          </p>
+          <button class="btn-white-cta" id="cta-action-btn">Get Your Card &rarr;</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-wrapper">
+    <div class="container">
+      <!-- Top Row -->
+      <div class="footer-top-row">
+        <div class="footer-brand-group">
+          <a href="#" class="footer-brand">
+            <img src="assets/nova-logo.png" alt="NOVA" class="footer-logo-img">
+          </a>
+          <p class="footer-tagline">Smarter money. Greater control.</p>
+        </div>
+        <div class="system-status-indicator">
+          <span class="system-status-dot"></span>
+          <span class="system-status-text">All Systems Global & Operational</span>
+        </div>
+      </div>
+
+      <!-- Links Row -->
+      <div class="footer-links-row">
+        <a href="#hero" class="footer-nav-link">Hardware Card</a>
+        <a href="#hero" class="footer-nav-link">Virtual Issuance</a>
+        <a href="#security" class="footer-nav-link">Security Architecture</a>
+        <a href="#features" class="footer-nav-link">Global Limits</a>
+        <a href="#features" class="footer-nav-link">API Docs</a>
+        <a href="#security" class="footer-nav-link">Privacy Policy</a>
+        <a href="#security" class="footer-nav-link">Terms of Service</a>
+        <a href="#security" class="footer-nav-link">Compliance</a>
+      </div>
+
+      <!-- Bottom Disclaimer -->
+      <div class="footer-bottom-row">
+        <p class="footer-disclaimer">
+          &copy; 2026 NOVA Technologies Inc. Global USD multi-currency accounts issued in partnership with licensed banking authorities. All rights reserved. Equal Housing Opportunity. Member FDIC Pass-Through Insurance.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive LocalStorage Card Management Modal -->
+  <div class="modal-overlay" id="card-modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 class="modal-title" id="modal-title">NOVA Dollar Card Settings</h3>
+          <p class="modal-subtitle">Configure your virtual dollar card parameters (persisted to LocalStorage).</p>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      
+      <form id="card-settings-form" class="modal-form">
+        <div class="form-group">
+          <label for="input-cardholder">Cardholder Name</label>
+          <input type="text" id="input-cardholder" class="form-input" value="CHINEME WORLU" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="input-balance">Available Balance (USD)</label>
+            <input type="number" id="input-balance" class="form-input" value="4250.00" step="10" min="0" required>
+          </div>
+          <div class="form-group">
+            <label for="input-limit">Monthly Limit (USD)</label>
+            <input type="number" id="input-limit" class="form-input" value="5000.00" step="100" min="100" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="input-spend">Current Month Spend (USD)</label>
+          <input type="range" id="input-spend-range" class="form-range" min="0" max="5000" step="50" value="3200">
+          <div class="range-display">
+            <span>Spent: $<span id="spend-range-val">3,200</span></span>
+            <span>Limit: $<span id="limit-range-val">5,000</span></span>
+          </div>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="toggle-switch-label" for="input-freeze-card">
+            <input type="checkbox" id="input-freeze-card">
+            <span class="toggle-slider"></span>
+            <span class="toggle-text">Lock / Freeze Card Immediately</span>
+          </label>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-modal-secondary" id="btn-reset-defaults">Reset Defaults</button>
+          <button type="submit" class="btn-modal-primary">Save & Apply Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="alert"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
