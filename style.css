@@ -441,7 +441,7 @@ img {
 .hero-mockup-wrapper {
   position: relative;
   width: 100%;
-  max-width: 540px;
+  max-width: 580px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -864,7 +864,7 @@ img {
 }
 
 .phone-frame-container {
-  max-width: 480px;
+  max-width: 535px;
   width: 100%;
   perspective: 1000px;
 }
@@ -1866,7 +1866,7 @@ img {
 
   .hero-mockup-wrapper {
     width: 100%;
-    max-width: 440px;
+    max-width: 480px;
     margin: 0 auto;
     background: transparent;
     border: none;
@@ -2150,7 +2150,7 @@ img {
   }
 
   .phone-frame-container {
-    max-width: 335px;
+    max-width: 380px;
     width: 100%;
     margin: 0 auto;
     perspective: none;
@@ -2547,11 +2547,11 @@ img {
   }
 
   .hero-mockup-wrapper {
-    max-width: 350px;
+    max-width: 380px;
   }
 
   .phone-frame-container {
-    max-width: 305px;
+    max-width: 340px;
   }
 
   .section-title {
