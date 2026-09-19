@@ -1089,6 +1089,7 @@ img {
   height: 100%;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .testimonials-banner-img {
@@ -1097,7 +1098,8 @@ img {
   object-fit: cover;
   object-position: center;
   opacity: 0.85;
-  filter: brightness(0.95);
+  filter: blur(6px) brightness(0.92);
+  transform: scale(1.05);
 }
 
 .testimonials-overlay-gradient {
@@ -2324,7 +2326,8 @@ img {
 
   .testimonials-banner-img {
     opacity: 0.9;
-    filter: brightness(0.95);
+    filter: blur(6px) brightness(0.92);
+    transform: scale(1.05);
   }
 
   .testimonials-overlay-gradient {
