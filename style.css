@@ -1851,40 +1851,40 @@ img {
   .hero-visual {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
-    /* horizontal padding keeps image 22px from screen edges */
-    padding-left: 22px;
-    padding-right: 22px;
-    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 24px;
     perspective: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
 
   .hero-mockup-wrapper {
     width: 100%;
-    /* Crop to roughly top 70% of the image (card + badges, no Security Settings) */
-    /* Image is 985×1024. At full width the rendered height ≈ width × 1.04.        */
-    /* We expose ~70% of that height: height ≈ 0.70 × width × 1.04 ≈ 0.728w      */
-    /* Using aspect-ratio keeps it exact without a fixed px height                 */
-    aspect-ratio: 985 / 716;
-    overflow: hidden;
-    /* Scale image slightly wider than wrapper to push phone side bezels out       */
+    max-width: 440px;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .hero-mockup-img {
-    /* Render image at 118% of wrapper width — zooms past side bezels              */
-    width: 118%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
-    flex-shrink: 0;
-    /* Push the overflowing sides equally off-screen                               */
-    margin-left: -9%;
-    margin-right: -9%;
-    /* Start from the very top so badges are visible                               */
-    margin-top: 0;
+    margin: 0 auto;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.65));
   }
 
   /* --------------------------------------------------------------------------
@@ -2544,8 +2544,7 @@ img {
   }
 
   .hero-mockup-wrapper {
-    /* On very narrow phones the aspect-ratio stays correct — no override needed */
-    aspect-ratio: 985 / 716;
+    max-width: 350px;
   }
 
   .phone-frame-container {
